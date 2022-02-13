@@ -10,6 +10,5 @@ namespace MB.Application.Contracts.ArticleCategory {
         public string Title { get; set; }
         public bool IsDeleted { get; set; }
         public string CreationDate { get; set; }
-
     }
 }
