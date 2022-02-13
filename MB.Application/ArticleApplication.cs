@@ -19,8 +19,27 @@ namespace MB.Application {
             _articleRepository.CreateAndSave(article);
         }
 
+        public void Edit (EditArticle command) {
+            var article = _articleRepository.GetById(command.Id);
+            article.EditArticle(command.Title, command.ShortDescription, command.Image, command.Content, command.ArticleCategoryId);
+            _articleRepository.Save();
+        }
+
+        public EditArticle Get (long Id) {
+            var article = _articleRepository.GetById(Id);
+            return new EditArticle {
+                Id = article.Id,
+                Title = article.Title,
+                ShortDescription = article.ShortDescription,
+                Image = article.Image,
+                Content = article.Content,
+                ArticleCategoryId = article.ArticleCategoryId
+            };
+        }
+
         public List<ArticleViewModel> GetList () {
             return _articleRepository.GetList();
         }
+
     }
 }
