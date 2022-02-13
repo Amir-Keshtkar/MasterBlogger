@@ -1,0 +1,12 @@
+C:\Users\Amiri\Documents\source\repos\MasterBlogger\MB.Application.Contracts\bin\Debug\net6.0\MB.Application.Contracts.deps.json
+C:\Users\Amiri\Documents\source\repos\MasterBlogger\MB.Application.Contracts\bin\Debug\net6.0\MB.Application.Contracts.dll
+C:\Users\Amiri\Documents\source\repos\MasterBlogger\MB.Application.Contracts\bin\Debug\net6.0\ref\MB.Application.Contracts.dll
+C:\Users\Amiri\Documents\source\repos\MasterBlogger\MB.Application.Contracts\bin\Debug\net6.0\MB.Application.Contracts.pdb
+C:\Users\Amiri\Documents\source\repos\MasterBlogger\MB.Application.Contracts\obj\Debug\net6.0\MB.Application.Contracts.csproj.AssemblyReference.cache
+C:\Users\Amiri\Documents\source\repos\MasterBlogger\MB.Application.Contracts\obj\Debug\net6.0\MB.Application.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Amiri\Documents\source\repos\MasterBlogger\MB.Application.Contracts\obj\Debug\net6.0\MB.Application.Contracts.AssemblyInfoInputs.cache
+C:\Users\Amiri\Documents\source\repos\MasterBlogger\MB.Application.Contracts\obj\Debug\net6.0\MB.Application.Contracts.AssemblyInfo.cs
+C:\Users\Amiri\Documents\source\repos\MasterBlogger\MB.Application.Contracts\obj\Debug\net6.0\MB.Application.Contracts.csproj.CoreCompileInputs.cache
+C:\Users\Amiri\Documents\source\repos\MasterBlogger\MB.Application.Contracts\obj\Debug\net6.0\MB.Application.Contracts.dll
+C:\Users\Amiri\Documents\source\repos\MasterBlogger\MB.Application.Contracts\obj\Debug\net6.0\ref\MB.Application.Contracts.dll
+C:\Users\Amiri\Documents\source\repos\MasterBlogger\MB.Application.Contracts\obj\Debug\net6.0\MB.Application.Contracts.pdb

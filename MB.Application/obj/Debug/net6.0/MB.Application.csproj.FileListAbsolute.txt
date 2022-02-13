@@ -1,0 +1,17 @@
+C:\Users\Amiri\Documents\source\repos\MasterBlogger\MB.Application\bin\Debug\net6.0\MB.Application.deps.json
+C:\Users\Amiri\Documents\source\repos\MasterBlogger\MB.Application\bin\Debug\net6.0\MB.Application.dll
+C:\Users\Amiri\Documents\source\repos\MasterBlogger\MB.Application\bin\Debug\net6.0\ref\MB.Application.dll
+C:\Users\Amiri\Documents\source\repos\MasterBlogger\MB.Application\bin\Debug\net6.0\MB.Application.pdb
+C:\Users\Amiri\Documents\source\repos\MasterBlogger\MB.Application\bin\Debug\net6.0\MB.Application.Contracts.dll
+C:\Users\Amiri\Documents\source\repos\MasterBlogger\MB.Application\bin\Debug\net6.0\MB.Domain.dll
+C:\Users\Amiri\Documents\source\repos\MasterBlogger\MB.Application\bin\Debug\net6.0\MB.Application.Contracts.pdb
+C:\Users\Amiri\Documents\source\repos\MasterBlogger\MB.Application\bin\Debug\net6.0\MB.Domain.pdb
+C:\Users\Amiri\Documents\source\repos\MasterBlogger\MB.Application\obj\Debug\net6.0\MB.Application.csproj.AssemblyReference.cache
+C:\Users\Amiri\Documents\source\repos\MasterBlogger\MB.Application\obj\Debug\net6.0\MB.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Amiri\Documents\source\repos\MasterBlogger\MB.Application\obj\Debug\net6.0\MB.Application.AssemblyInfoInputs.cache
+C:\Users\Amiri\Documents\source\repos\MasterBlogger\MB.Application\obj\Debug\net6.0\MB.Application.AssemblyInfo.cs
+C:\Users\Amiri\Documents\source\repos\MasterBlogger\MB.Application\obj\Debug\net6.0\MB.Application.csproj.CoreCompileInputs.cache
+C:\Users\Amiri\Documents\source\repos\MasterBlogger\MB.Application\obj\Debug\net6.0\MB.Application.csproj.CopyComplete
+C:\Users\Amiri\Documents\source\repos\MasterBlogger\MB.Application\obj\Debug\net6.0\MB.Application.dll
+C:\Users\Amiri\Documents\source\repos\MasterBlogger\MB.Application\obj\Debug\net6.0\ref\MB.Application.dll
+C:\Users\Amiri\Documents\source\repos\MasterBlogger\MB.Application\obj\Debug\net6.0\MB.Application.pdb

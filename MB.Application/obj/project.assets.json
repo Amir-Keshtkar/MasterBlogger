@@ -1,0 +1,109 @@
+{
+  "version": 3,
+  "targets": {
+    "net6.0": {
+      "MB.Application.Contracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/MB.Application.Contracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MB.Application.Contracts.dll": {}
+        }
+      },
+      "MB.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/MB.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MB.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "MB.Application.Contracts/1.0.0": {
+      "type": "project",
+      "path": "../MB.Application.Contracts/MB.Application.Contracts.csproj",
+      "msbuildProject": "../MB.Application.Contracts/MB.Application.Contracts.csproj"
+    },
+    "MB.Domain/1.0.0": {
+      "type": "project",
+      "path": "../MB.Domain/MB.Domain.csproj",
+      "msbuildProject": "../MB.Domain/MB.Domain.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net6.0": [
+      "MB.Application.Contracts >= 1.0.0",
+      "MB.Domain >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Amiri\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\Amiri\\Documents\\source\\repos\\MasterBlogger\\MB.Application\\MB.Application.csproj",
+      "projectName": "MB.Application",
+      "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\MasterBlogger\\MB.Application\\MB.Application.csproj",
+      "packagesPath": "C:\\Users\\Amiri\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\MasterBlogger\\MB.Application\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\Amiri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "projectReferences": {
+            "C:\\Users\\Amiri\\Documents\\source\\repos\\MasterBlogger\\MB.Application.Contracts\\MB.Application.Contracts.csproj": {
+              "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\MasterBlogger\\MB.Application.Contracts\\MB.Application.Contracts.csproj"
+            },
+            "C:\\Users\\Amiri\\Documents\\source\\repos\\MasterBlogger\\MB.Domain\\MB.Domain.csproj": {
+              "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\MasterBlogger\\MB.Domain\\MB.Domain.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net6.0": {
+        "targetAlias": "net6.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.102\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
