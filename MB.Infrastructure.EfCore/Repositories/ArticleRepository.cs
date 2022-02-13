@@ -17,6 +17,11 @@ namespace MB.Infrastructure.EFCore.Repositories {
             _context = context;
         }
 
+        public void CreateAndSave (Article entity) {
+            _context.Articles.Add(entity);
+            _context.SaveChanges();
+        }
+
         public List<ArticleViewModel> GetList () {
             return _context.Articles.Include(x => x.ArticleCategory).Select(x => new ArticleViewModel{
                 Id = x.Id,
@@ -26,5 +31,6 @@ namespace MB.Infrastructure.EFCore.Repositories {
                 IsDeleted = x.IsDeleted,
             }).ToList();
         }
+        
     }
 }

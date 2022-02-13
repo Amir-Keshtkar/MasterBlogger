@@ -5,7 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace MB.Application.Contracts.Article {
-    public interface IArticleApplication {
+    public interface IArticleApplication  {
         List<ArticleViewModel> GetList();
+        void Create(CreateArticle command);
     }
 }
