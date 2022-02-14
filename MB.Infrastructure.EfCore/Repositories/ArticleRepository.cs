@@ -33,5 +33,9 @@ namespace MB.Infrastructure.EFCore.Repositories {
         public void Save () {
             _context.SaveChanges();
         }
+
+        public bool Exist (string Title) {
+            return _context.Articles.Any(a => a.Title == Title);
+        }
     }
 }
