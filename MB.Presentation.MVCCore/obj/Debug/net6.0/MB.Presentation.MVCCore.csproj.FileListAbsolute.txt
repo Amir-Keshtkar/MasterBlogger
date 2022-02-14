@@ -65,3 +65,5 @@ C:\Users\Amiri\Documents\source\repos\MasterBlogger\MB.Presentation.MVCCore\bin\
 C:\Users\Amiri\Documents\source\repos\MasterBlogger\MB.Presentation.MVCCore\obj\Debug\net6.0\MB.Presentation.MVCCore.csproj.CopyComplete
 C:\Users\Amiri\Documents\source\repos\MasterBlogger\MB.Presentation.MVCCore\bin\Debug\net6.0\MB.Infrastructure.Core.dll
 C:\Users\Amiri\Documents\source\repos\MasterBlogger\MB.Presentation.MVCCore\bin\Debug\net6.0\MB.Infrastructure.Core.pdb
+C:\Users\Amiri\Documents\source\repos\MasterBlogger\MB.Presentation.MVCCore\bin\Debug\net6.0\MB.Infrastructure.Query.dll
+C:\Users\Amiri\Documents\source\repos\MasterBlogger\MB.Presentation.MVCCore\bin\Debug\net6.0\MB.Infrastructure.Query.pdb
