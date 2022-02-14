@@ -41,5 +41,16 @@ namespace MB.Application {
             return _articleRepository.GetList();
         }
 
+        public void Activate (long Id) {
+            var article = _articleRepository.GetById(Id);
+            article.Activate();
+            _articleRepository.Save();
+        }
+
+        public void Remove (long Id) {
+            var article = _articleRepository.GetById(Id);
+            article.Remove();
+            _articleRepository.Save();
+        }
     }
 }

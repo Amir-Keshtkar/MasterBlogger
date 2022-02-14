@@ -10,10 +10,19 @@ namespace MB.Presentation.MVCCore.Areas.Administrator.Pages.ArticleManagement {
         public ListModel (IArticleApplication articleApplication) {
             _articleApplication = articleApplication;
         }
-
-
+        
         public void OnGet () {
-            Articles=_articleApplication.GetList();
+            Articles =_articleApplication.GetList();
+        }
+
+        public RedirectToPageResult OnPostRemove(long Id) {
+            _articleApplication.Remove(Id);
+            return RedirectToPage("./List");
+        }
+
+        public RedirectToPageResult OnPostActivate(long Id) {
+            _articleApplication.Activate(Id);
+            return RedirectToPage("./List");
         }
     }
 }
