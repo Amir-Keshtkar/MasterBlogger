@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿
 using MB.Domain.CommentAgg;
 
 namespace MB.Infrastructure.EFCore.Repositories {
@@ -11,6 +7,11 @@ namespace MB.Infrastructure.EFCore.Repositories {
 
         public CommentRepository(MasterBloggerContext context) {
             _context = context;
+        }
+
+        public void AddAndSave (Comment command) {
+            _context.Comments.Add(command);
+            _context.SaveChanges();
         }
     }
 }
