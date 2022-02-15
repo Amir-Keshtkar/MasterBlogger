@@ -1,0 +1,62 @@
+﻿@page
+@using MB.Domain.CommentAgg
+@model MB.Presentation.MVCCore.Areas.Administrator.Pages.CommentManagement.ListModel
+@{
+}
+
+<div class="card">
+    <div class="card-header">
+        <h3 class="float-left">Article List</h3>
+    </div>
+    <div class="card-body">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Message</th>
+                    <th>Article</th>
+                    <th>Status</th>
+                    <th>Creation Date</th>
+                    <th>Operations</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach(var comment in Model.Comments) {
+                    <tr>
+                        <td>@comment.Id</td>
+                        <td>@comment.Name</td>
+                        <td>@comment.Email</td>
+                        <td>@comment.Message</td>
+                        <td>@comment.Article</td>
+                        <td>
+                            @if(comment.Status == Statuses.New) {
+                                <i class="fa fa-eye fa-2x text-info"></i>
+                            } else if(comment.Status == Statuses.Confirmed) {
+                                <i class="fa fa-close fa-2x text-success"></i>
+                            } else {
+                                <i class="fa fa-check fa-2x text-danger"></i>
+                            }
+                        </td>
+                        <td>@comment.CreationDate</td>
+                        <td>
+                            <a class="btn btn-warning float-left mr-3" asp-page="./Edit" asp-route-Id="@comment.Id">Edit  </a>
+                            @if(comment.Status==Statuses.New) {
+                                <form class="float-left" method="post" asp-page-handler="Confirm">
+                                    <button class="btn btn-success">Confirm</button>
+                                    <input type="hidden" name="Id" value="@comment.Id" />
+                                </form>
+
+                                <form class="float-left" method="post" asp-page-handler="Cancel">
+                                    <button class="btn btn-danger">Cancel</button>
+                                    <input type="hidden" name="Id" value="@comment.Id" />
+                                </form>
+                            }
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

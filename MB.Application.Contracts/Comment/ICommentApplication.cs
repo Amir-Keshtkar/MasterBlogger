@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace MB.Application.Contracts.Comment {
     public interface ICommentApplication {
+        List<CommentViewModel> GetComments();
         void Add(AddComment command);
     }
 }
