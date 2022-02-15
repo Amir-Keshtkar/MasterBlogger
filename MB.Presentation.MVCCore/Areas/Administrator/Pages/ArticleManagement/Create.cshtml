@@ -22,6 +22,7 @@
                         </div>
                         <div class="form-group">
                             <label for="Image" class="control-label">Image:</label>
+                            <!-- image input -->
                             <input name="Image" id="Image" class="form-control" />
                         </div>
                         <div class="form-group">
@@ -29,7 +30,7 @@
                             <textarea name="Content" id="Content" class="form-control" rows="5"></textarea>
                         </div>
                         <div class="form-group">
-                            <label for="Image" class="control-label">Image:</label>
+                            <label for="ArticleCategoryId" class="control-label">Article Categories:</label>
                             <select class="form-control" asp-items="@Model.ArticleCategories" name="ArticleCategoryId" id="ArticleCategoryId">
                                 <option value="0">Select Article Category</option>
                             </select>

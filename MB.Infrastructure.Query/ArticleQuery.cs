@@ -13,7 +13,7 @@ public class ArticleQuery: IArticleQuery {
     }
 
     public List<ArticleQueryView> GetArticles () {
-        return _context.Articles
+        return _context.Articles.Where(z=>z.IsDeleted==false)
             .Include(x => x.ArticleCategory)
             .Include(x => x.Comments)
             .Select(x => new ArticleQueryView {
