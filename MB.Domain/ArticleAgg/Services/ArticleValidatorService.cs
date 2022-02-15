@@ -1,4 +1,6 @@
-﻿using MB.Domain.ArticleCategoryAgg.Exceptions;
+﻿using System.Security.Cryptography.X509Certificates;
+using System.Xml;
+using MB.Domain.ArticleCategoryAgg.Exceptions;
 
 namespace MB.Domain.ArticleAgg.Services;
 
@@ -9,8 +11,8 @@ public class ArticleValidatorService: IArticleValidatorService {
         _articleRepository = articleRepository;
     }
 
-    public void CheckRecordExistence (string Title) {
-        if (_articleRepository.Exist(Title)) {
+    public void CheckRecordExistence (string title) {
+        if (_articleRepository.Exists(x=>x.Title==title)) {
             throw new DuplicatedRecordException();
         }
     }

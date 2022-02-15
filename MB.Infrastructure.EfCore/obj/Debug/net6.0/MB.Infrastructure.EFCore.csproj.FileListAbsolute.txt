@@ -17,3 +17,5 @@ C:\Users\Amiri\Documents\source\repos\MasterBlogger\MB.Infrastructure.EfCore\obj
 C:\Users\Amiri\Documents\source\repos\MasterBlogger\MB.Infrastructure.EfCore\obj\Debug\net6.0\MB.Infrastructure.EFCore.genruntimeconfig.cache
 C:\Users\Amiri\Documents\source\repos\MasterBlogger\MB.Infrastructure.EfCore\bin\Debug\net6.0\MB.Application.Contracts.dll
 C:\Users\Amiri\Documents\source\repos\MasterBlogger\MB.Infrastructure.EfCore\bin\Debug\net6.0\MB.Application.Contracts.pdb
+C:\Users\Amiri\Documents\source\repos\MasterBlogger\MB.Infrastructure.EfCore\bin\Debug\net6.0\01_Framework.dll
+C:\Users\Amiri\Documents\source\repos\MasterBlogger\MB.Infrastructure.EfCore\bin\Debug\net6.0\01_Framework.pdb

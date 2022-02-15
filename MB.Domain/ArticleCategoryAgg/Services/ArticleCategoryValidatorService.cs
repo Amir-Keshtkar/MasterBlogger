@@ -9,8 +9,8 @@ public class ArticleCategoryValidatorService: IArticleCategoryValidatorService {
         _articleCategoryRepository = articleCategoryRepository;
     }
 
-    public void CheckRecordExistence (string Title) {
-        if (_articleCategoryRepository.Exists(Title)) {
+    public void CheckRecordExistence (string title) {
+        if (_articleCategoryRepository.Exists(x => x.Title==title)) {
             throw new Exception("This record already exists in database");
         }
     }

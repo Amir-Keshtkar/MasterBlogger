@@ -1,16 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
+using _01_Framework.Infrastructure;
 using MB.Application.Contracts.Article;
 
 namespace MB.Domain.ArticleAgg {
-    public interface IArticleRepository {
-        List<ArticleViewModel> GetList();
-        void CreateAndSave(Article entity);
-        Article GetById(long Id);
-        bool Exist(string Title);
-        void Save();
+    public interface IArticleRepository : IRepository<long, Article> {
+        public List<ArticleViewModel> GetList();
     }
 }

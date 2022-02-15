@@ -1,15 +1,14 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using _01_Framework.Domain;
 using MB.Domain.ArticleAgg;
 using MB.Domain.ArticleCategoryAgg.Services;
 
 namespace MB.Domain.ArticleCategoryAgg {
-    public class ArticleCategory {
-        public long Id { get; }
+    public class ArticleCategory : DomainBase<long> {
         public string Title { get; private set; }
         public bool IsDeleted { get; private set; }
-        public DateTime CreationDate { get; private set; }
         public ICollection<Article> Articles { get; private set; }
 
         protected ArticleCategory() {
@@ -21,7 +20,6 @@ namespace MB.Domain.ArticleCategoryAgg {
             Articles=new List<Article>();
             Title = title;
             IsDeleted = false;
-            CreationDate = DateTime.Now;
         }
 
         public void Rename (string title) {
