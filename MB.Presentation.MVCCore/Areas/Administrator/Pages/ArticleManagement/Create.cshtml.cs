@@ -10,13 +10,13 @@ namespace MB.Presentation.MVCCore.Areas.Administrator.Pages.ArticleManagement {
         public List<SelectListItem> ArticleCategories;
         private readonly IArticleCategoryApplication _articleCategoryApplication;
 
-        public CreateModel(IArticleApplication articleApplication, IArticleCategoryApplication categoryApplication) {
+        public CreateModel (IArticleApplication articleApplication, IArticleCategoryApplication categoryApplication) {
             _articleApplication = articleApplication;
             _articleCategoryApplication = categoryApplication;
         }
 
         public void OnGet () {
-            ArticleCategories = _articleCategoryApplication.List().Select(x=>new SelectListItem(x.Title,x.Id.ToString())).ToList();
+            ArticleCategories = _articleCategoryApplication.List().Where(x=>x.IsDeleted==false).Select(x=>new SelectListItem(x.Title,x.Id.ToString())).ToList();
         }
 
         public RedirectToPageResult OnPost(CreateArticle command) {

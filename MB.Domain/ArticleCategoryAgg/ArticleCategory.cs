@@ -24,7 +24,6 @@ namespace MB.Domain.ArticleCategoryAgg {
 
         public void Rename (string title) {
             GuardAgainstEmptyTitle(title);
-
             Title = title;
         }
 
@@ -36,7 +35,7 @@ namespace MB.Domain.ArticleCategoryAgg {
             IsDeleted = false;
         }
 
-        void GuardAgainstEmptyTitle (string title) {
+        private static void GuardAgainstEmptyTitle (string title) {
             if(string.IsNullOrWhiteSpace(title)) {
                 throw new ArgumentNullException();
             }

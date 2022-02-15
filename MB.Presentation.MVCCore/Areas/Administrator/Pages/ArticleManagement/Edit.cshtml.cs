@@ -17,9 +17,9 @@ namespace MB.Presentation.MVCCore.Areas.Administrator.Pages.ArticleManagement {
             _articleCategoryApplication = articleCategoryApplication;
         }
 
-        public void OnGet (long Id) {
-            Article = _articleApplication.Get(Id);
-            ArticleCategories = _articleCategoryApplication.List().Select(x => new SelectListItem(x.Title, x.Id.ToString())).ToList();
+        public void OnGet (long id) {
+            Article = _articleApplication.Get(id);
+            ArticleCategories = _articleCategoryApplication.List().Where(x=>x.IsDeleted==false).Select(x => new SelectListItem(x.Title, x.Id.ToString())).ToList();
         }
 
         public RedirectToPageResult OnPost() {
