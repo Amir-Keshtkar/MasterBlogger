@@ -34,7 +34,7 @@ namespace MB.Infrastructure.EFCore.Repositories {
                 Message = x.Message,
                 Status = x.Status,
                 Article = x.Article.Title,
-            }).ToList();
+            }).OrderByDescending(x => x.Id).ToList();
         }
     }
 }
