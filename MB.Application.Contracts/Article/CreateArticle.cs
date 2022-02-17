@@ -6,4 +6,6 @@ public class CreateArticle {
     public string Image { get; set; }
     public string Content { get; set; }
     public long ArticleCategoryId { get; set; }
+
+    //public HttpPostedFileBase ImageFile { get; set; }
 }

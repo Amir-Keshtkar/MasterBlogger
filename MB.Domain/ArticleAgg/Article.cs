@@ -1,6 +1,6 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using _01_Framework.Domain;
 using MB.Domain.ArticleCategoryAgg;
 using MB.Domain.CommentAgg;
@@ -15,6 +15,8 @@ namespace MB.Domain.ArticleAgg {
         public long ArticleCategoryId { get; set; }
         public ArticleCategory ArticleCategory { get; set; }
         public ICollection<Comment> Comments { get; private set; }
+
+        //public byte[] Image { get; set; }
 
         protected Article (){
         }

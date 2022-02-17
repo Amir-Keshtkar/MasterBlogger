@@ -1,6 +1,7 @@
 ﻿@page "{Id:long}"
 @model MB.Presentation.MVCCore.Areas.Administrator.Pages.ArticleManagement.EditModel
 @{
+    ViewData["Title"] = "Edit Article";
 }
 
 <div class="card">
@@ -10,7 +11,7 @@
     <div class="card-body">
         <div class="row">
             <div class="col-md-12">
-                <form method="post">
+                <form method="post" enctype="multipart/form-data" runat="server">
                     <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                     <input type="hidden" asp-for="Article.Id" />
                     <div class="col-md-6 col-sm-12">
@@ -23,8 +24,12 @@
                             <textarea asp-for="Article.ShortDescription" class="form-control" rows="3"></textarea>
                         </div>
                         <div class="form-group">
-                            <label asp-for="Article.Image" class="control-label">Image:</label>
-                            <input asp-for="Article.Image" class="form-control" />
+                            <label asp-for="Image" class="control-label">Image:</label>
+                            <!--     image input  -->
+                            <input type="file" accept="image/*" asp-for="Image" onchange="change_terms(@("~/img/"+ Model.Image))" asp-append-version="true" class="form-control-file" />
+                        </div>
+                        <div class="form-group post-thumbnail">
+                            <img runat="server" src="@("~/img/"+Model.Article.Image)" asp-append-version="true" alt="@Model.Article.Title" title="@Model.Article.Title" class="img-fluid" />
                         </div>
                         <div class="form-group">
                             <label asp-for="Article.Content" class="control-label">Content:</label>
@@ -35,7 +40,6 @@
                             <select asp-for="Article.ArticleCategoryId" asp-items="Model.ArticleCategories" class="form-control">
                                 <option value="0"> Select Article Category</option>
                             </select>
-
                         </div>
                     </div>
                     <div class="form-group">
@@ -47,3 +51,13 @@
         </div>
     </div>
 </div>
+
+
+<script>
+    function change_terms(name) {
+        alert("hello world " + name);
+        //$('#imag').attr("src","/img/"+name);
+        document.getElementsByTagName('img').getElementsByTagName(img).src=name;
+
+    }
+</script>

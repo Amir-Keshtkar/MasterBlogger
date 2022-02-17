@@ -9,7 +9,7 @@
     <div class="container">
         <div class="post-single">
             <div class="post-thumbnail">
-                <img src="@Model.Article.Image" alt="@Model.Article.Title" title="@Model.Article.Title" class="img-fluid">
+                <img src="@("~/img/"+Model.Article.Image)" asp-append-version="true" alt="@Model.Article.Title" title="@Model.Article.Title" class="img-fluid">
             </div>
             <div class="post-details">
                 <div class="post-meta d-flex justify-content-between">

@@ -1,6 +1,7 @@
 ﻿@page
 @model MB.Presentation.MVCCore.Areas.Administrator.Pages.ArticleManagement.CreateModel
 @{
+    ViewData["Title"] = "Create Article";
 }
 <div class="card">
     <div class="card-header">
@@ -9,7 +10,7 @@
     <div class="card-body">
         <div class="row">
             <div class="col-md-12">
-                <form method="post">
+                <form method="post"  enctype="multipart/form-data">
                     <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                     <div class="col-md-6 col-sm-12">
                         <div class="form-group">
@@ -22,8 +23,12 @@
                         </div>
                         <div class="form-group">
                             <label for="Image" class="control-label">Image:</label>
-                            <!-- image input -->
-                            <input name="Image" id="Image" class="form-control" />
+                            <!-- image input 
+                            <input  name="Image" id="Image" class="form-control-file" />
+                            -->
+                            <input name="Image" id="Image" type="file" accept="image/*" asp-for="Image" class="form-control-file" />
+                            
+                            
                         </div>
                         <div class="form-group">
                             <label for="Content" class="control-label">Content:</label>
