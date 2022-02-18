@@ -48,13 +48,8 @@ namespace MB.Presentation.MVCCore.Areas.Administrator.Pages.ArticleManagement {
             //    Image.CopyToAsync(fileStream);
             //}
             //Article.Image = Image.FileName;
-            return RedirectToPage("./List");
-        }
 
-        public void ChangeImage () {
-            //if(Image != null) {
-            //    Article.Image = Image.FileName;
-            //}
+            return RedirectToPage("./List");
         }
     }
 }

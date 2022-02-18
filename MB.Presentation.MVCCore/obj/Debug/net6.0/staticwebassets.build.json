@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "bVOS6liy8lT5cjKMhsDuLx1QI5ESbIJNBWo3rJ54oco=",
+  "Hash": "tW5b6ZAruRawUhk1Xw5oUGZX4eX8zC6xw7Z0KLwDDyA=",
   "Source": "MB.Presentation.MVCCore",
   "BasePath": "_content/MB.Presentation.MVCCore",
   "Mode": "Default",
@@ -372,6 +372,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\icons-reference\\styles.css"
+    },
+    {
+      "Identity": "C:\\Users\\Amiri\\Documents\\source\\repos\\MasterBlogger\\MB.Presentation.MVCCore\\wwwroot\\img\\0111 Wallpapers (6)2022-02-18T05-15-48.jpg",
+      "SourceId": "MB.Presentation.MVCCore",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Amiri\\Documents\\source\\repos\\MasterBlogger\\MB.Presentation.MVCCore\\wwwroot\\",
+      "BasePath": "_content/MB.Presentation.MVCCore",
+      "RelativePath": "img/0111 Wallpapers (6)2022-02-18T05-15-48.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\0111 Wallpapers (6)2022-02-18T05-15-48.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Amiri\\Documents\\source\\repos\\MasterBlogger\\MB.Presentation.MVCCore\\wwwroot\\img\\989675397351944329212022-02-18T05-18-01.jpg",
+      "SourceId": "MB.Presentation.MVCCore",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Amiri\\Documents\\source\\repos\\MasterBlogger\\MB.Presentation.MVCCore\\wwwroot\\",
+      "BasePath": "_content/MB.Presentation.MVCCore",
+      "RelativePath": "img/989675397351944329212022-02-18T05-18-01.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\989675397351944329212022-02-18T05-18-01.jpg"
     },
     {
       "Identity": "C:\\Users\\Amiri\\Documents\\source\\repos\\MasterBlogger\\MB.Presentation.MVCCore\\wwwroot\\img\\avatar-1.jpg",
@@ -1001,6 +1035,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\witcher 3.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Amiri\\Documents\\source\\repos\\MasterBlogger\\MB.Presentation.MVCCore\\wwwroot\\img\\witcher 322-02-182022-02-18T00-45-26.jpg",
+      "SourceId": "MB.Presentation.MVCCore",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Amiri\\Documents\\source\\repos\\MasterBlogger\\MB.Presentation.MVCCore\\wwwroot\\",
+      "BasePath": "_content/MB.Presentation.MVCCore",
+      "RelativePath": "img/witcher 322-02-182022-02-18T00-45-26.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\witcher 322-02-182022-02-18T00-45-26.jpg"
     },
     {
       "Identity": "C:\\Users\\Amiri\\Documents\\source\\repos\\MasterBlogger\\MB.Presentation.MVCCore\\wwwroot\\js\\front.js",

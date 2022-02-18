@@ -2,6 +2,7 @@
 @model MB.Presentation.MVCCore.Areas.Administrator.Pages.ArticleManagement.EditModel
 @{
     ViewData["Title"] = "Edit Article";
+    var ImageName = "~/img/" + Model.Article.Image;
 }
 
 <div class="card">
@@ -11,7 +12,7 @@
     <div class="card-body">
         <div class="row">
             <div class="col-md-12">
-                <form method="post" enctype="multipart/form-data" runat="server">
+                <form method="post" enctype="multipart/form-data">
                     <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                     <input type="hidden" asp-for="Article.Id" />
                     <div class="col-md-6 col-sm-12">
@@ -26,10 +27,10 @@
                         <div class="form-group">
                             <label asp-for="Image" class="control-label">Image:</label>
                             <!--     image input  -->
-                            <input type="file" accept="image/*" asp-for="Image" onchange="change_terms(@("~/img/"+ Model.Image))" asp-append-version="true" class="form-control-file" />
+                            <input type="file" accept="image/*" asp-for="Image" onchange="change_terms(this)" class="form-control-file" />
                         </div>
                         <div class="form-group post-thumbnail">
-                            <img runat="server" src="@("~/img/"+Model.Article.Image)" asp-append-version="true" alt="@Model.Article.Title" title="@Model.Article.Title" class="img-fluid" />
+                            <img id="img" src="@(ImageName)" asp-append-version="true" alt="@Model.Article.Title" title="@Model.Article.Title" class="img-fluid" />
                         </div>
                         <div class="form-group">
                             <label asp-for="Article.Content" class="control-label">Content:</label>
@@ -54,10 +55,21 @@
 
 
 <script>
-    function change_terms(name) {
-        alert("hello world " + name);
-        //$('#imag').attr("src","/img/"+name);
-        document.getElementsByTagName('img').getElementsByTagName(img).src=name;
-
-    }
+      function change_terms(input) {
+          var name=input.value;
+          //alert("hello world " + name);
+          //$('#imag').attr("src","/img/"+name);
+          //var _name=name.replace(/\\/gi, "/");
+          //alert("hello world " + _name);
+          //document.getElementById('img').src=_name;
+          
+          if (input.files && input.files[0]) {
+              var reader = new FileReader();
+              reader.onload = function (e) {
+                  $('#img')
+                  .attr('src', e.target.result);
+              };
+              reader.readAsDataURL(input.files[0]);
+          }
+      }
 </script>
