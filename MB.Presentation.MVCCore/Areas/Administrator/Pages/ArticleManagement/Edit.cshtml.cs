@@ -14,8 +14,7 @@ namespace MB.Presentation.MVCCore.Areas.Administrator.Pages.ArticleManagement {
         private readonly IArticleCategoryApplication _articleCategoryApplication;
         public List<SelectListItem> ArticleCategories;
         private readonly IWebHostEnvironment _hostEnvironment;
-        [BindProperty]
-        public IFormFile Image { get; set; }
+        [BindProperty] public IFormFile InputImage { get; set; }
 
         public EditModel (IArticleApplication articleApplication,
             IArticleCategoryApplication articleCategoryApplication, IWebHostEnvironment hostEnvironment) {
@@ -34,15 +33,17 @@ namespace MB.Presentation.MVCCore.Areas.Administrator.Pages.ArticleManagement {
             if(ModelState.IsValid) {
                 //Save image to wwwroot/image
                 var wwwRootPath = _hostEnvironment.WebRootPath;
-                var fileName = Path.GetFileNameWithoutExtension(Image.FileName);
-                var extension = Path.GetExtension(Image.FileName);
-                Article.Image = fileName = fileName +DateTime.Now.ToString("s").Replace(":","-")+ extension;
+                string fileName;
+                string extension;
+                fileName = Path.GetFileNameWithoutExtension(InputImage.FileName);
+                extension = Path.GetExtension(InputImage.FileName);
+                Article.Image = fileName = fileName + DateTime.Now.ToString("s").Replace(":", "-") + extension;
                 var path = Path.Combine(wwwRootPath + "/img/", fileName);
                 await using(var fileStream = new FileStream(path, FileMode.Create)) {
-                     await Image.CopyToAsync(fileStream);
+                    await InputImage.CopyToAsync(fileStream);
                 }
-                _articleApplication.Edit(Article);
             }
+            _articleApplication.Edit(Article);
             //var file = Path.Combine(_hostEnvironment.WebRootPath, "img", Image.FileName);
             //using(var fileStream = new FileStream(file, FileMode.Create)) {
             //    Image.CopyToAsync(fileStream);

@@ -1,0 +1,17 @@
+C:\Users\Amiri\Documents\source\repos\MasterBlogger\MB.Domain\bin\Release\net6.0\MB.Domain.deps.json
+C:\Users\Amiri\Documents\source\repos\MasterBlogger\MB.Domain\bin\Release\net6.0\MB.Domain.dll
+C:\Users\Amiri\Documents\source\repos\MasterBlogger\MB.Domain\bin\Release\net6.0\ref\MB.Domain.dll
+C:\Users\Amiri\Documents\source\repos\MasterBlogger\MB.Domain\bin\Release\net6.0\MB.Domain.pdb
+C:\Users\Amiri\Documents\source\repos\MasterBlogger\MB.Domain\bin\Release\net6.0\01_Framework.dll
+C:\Users\Amiri\Documents\source\repos\MasterBlogger\MB.Domain\bin\Release\net6.0\MB.Application.Contracts.dll
+C:\Users\Amiri\Documents\source\repos\MasterBlogger\MB.Domain\bin\Release\net6.0\01_Framework.pdb
+C:\Users\Amiri\Documents\source\repos\MasterBlogger\MB.Domain\bin\Release\net6.0\MB.Application.Contracts.pdb
+C:\Users\Amiri\Documents\source\repos\MasterBlogger\MB.Domain\obj\Release\net6.0\MB.Domain.csproj.AssemblyReference.cache
+C:\Users\Amiri\Documents\source\repos\MasterBlogger\MB.Domain\obj\Release\net6.0\MB.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Amiri\Documents\source\repos\MasterBlogger\MB.Domain\obj\Release\net6.0\MB.Domain.AssemblyInfoInputs.cache
+C:\Users\Amiri\Documents\source\repos\MasterBlogger\MB.Domain\obj\Release\net6.0\MB.Domain.AssemblyInfo.cs
+C:\Users\Amiri\Documents\source\repos\MasterBlogger\MB.Domain\obj\Release\net6.0\MB.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Amiri\Documents\source\repos\MasterBlogger\MB.Domain\obj\Release\net6.0\MB.Domain.csproj.CopyComplete
+C:\Users\Amiri\Documents\source\repos\MasterBlogger\MB.Domain\obj\Release\net6.0\MB.Domain.dll
+C:\Users\Amiri\Documents\source\repos\MasterBlogger\MB.Domain\obj\Release\net6.0\ref\MB.Domain.dll
+C:\Users\Amiri\Documents\source\repos\MasterBlogger\MB.Domain\obj\Release\net6.0\MB.Domain.pdb
